@@ -2,6 +2,7 @@ version: '3.8'
 services:
   app:
     image: dattahub
+    container_name: dattahub
     restart: always
     build:
       context: ./
@@ -13,6 +14,8 @@ services:
         - /app/.next
     ports:
       - "3000:3000"
+    networks:
+      - web_network
   certbot:
     image: certbot/certbot:latest
     volumes:
