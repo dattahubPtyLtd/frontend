@@ -3,11 +3,9 @@ services:
   app:
     image: dattahub
     restart: always
-    target: dev
-    environment:
-      - NODE_ENV=production
     build:
       context: ./
+      target: production
       dockerfile: Dockerfile
     volumes:
         - .:/app
@@ -37,8 +35,8 @@ services:
         #- media_volume:/app/media/:ro
     networks:
       - web_network
-      - app
     depends_on:
+      - app
       - certbot
 networks:
   db_network:
