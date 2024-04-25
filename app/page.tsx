@@ -20,9 +20,10 @@ export default function Home() {
                 </h2>
 
                 <p className="text-sm sm:text-base text-gray-700 dark:text-white">
-                    Have a team great with business, but struggeling with infrastructure ?
-                    Save time on upgrading and making mistakes and trying again, 
-                    Save your time to market by hiring experts in the field and get peace of mind
+                Is your business team excelling in strategy but facing hurdles with infrastructure?
+                Don't waste valuable time on trial and error.
+                Expedite upgrades and avoid costly mistakes by entrusting your infrastructure needs to seasoned experts.
+                Accelerate your time to market and enjoy peace of mind by partnering with industry professionals.
                 </p>
                 <div className="flex mt-8">
                   
