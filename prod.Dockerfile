@@ -11,6 +11,7 @@ RUN npm run build
 
 
 FROM base as production
+RUN npm install 
 WORKDIR /app
 
 ENV NODE_ENV=production
