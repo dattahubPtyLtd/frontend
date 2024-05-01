@@ -1,8 +1,11 @@
+"use client";
 import Icon from "./dhl";
+import React, { useState } from 'react'; 
 
 const DHNavbar = () => {
+const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="dark:bg-gray-800 bg-white relative overflow-hidden h-screen h-24 sm:h-32 flex items-center z-30 w-full">
+    <header className="dark:bg-gray-800 h-28 bg-white relative overflow-hidden sm:h-32 flex sm:block items-center w-full">
         <div className="container mx-auto px-6 flex items-center justify-between">
           <div className="container mx-auto columns-2 flex">
             <Icon/>
@@ -28,12 +31,12 @@ const DHNavbar = () => {
                         Career
                     </a>
                 </nav>
-                <button className="lg:hidden flex flex-col ml-4">
-                    <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                <button className="lg:hidden flex flex-col ml-4" onClick={() => setIsOpen(!isOpen)} >
+                    <span className={`w-6 h-1 bg-gray-800 dark:bg-white mb-1 ${isOpen ? "hidden" : "block"}`}>
                     </span>
-                    <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    <span className={`w-6 h-1 bg-gray-800 dark:bg-white mb-1 ${isOpen ? "hidden" : "block"}`}>
                     </span>
-                    <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    <span className={`w-6 h-1 bg-gray-800 dark:bg-white mb-1 ${isOpen ? "hidden" : "block"}`}>
                     </span>
                 </button>
             </div>
