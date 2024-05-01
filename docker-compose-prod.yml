@@ -6,7 +6,6 @@ services:
     restart: always
     build:
       context: ./
-      target: production
       dockerfile: prod.Dockerfile
     volumes:
         - .:/app
