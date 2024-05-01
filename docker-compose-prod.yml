@@ -7,7 +7,7 @@ services:
     build:
       context: ./
       target: production
-      dockerfile: Dockerfile
+      dockerfile: prod.Dockerfile
     volumes:
         - .:/app
         - /app/node_modules
