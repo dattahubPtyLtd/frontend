@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  app:
+  frontend:
     image: dattahub
     container_name: dattahub
     restart: always
@@ -39,7 +39,7 @@ services:
     networks:
       - web_network
     depends_on:
-      - app
+      - frontend
       - certbot
 networks:
   db_network:
