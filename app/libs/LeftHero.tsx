@@ -51,8 +51,10 @@ function Form() {
                value={email} onChange={e => setEmail(e.target.value)}/>
         
         <button type="submit" className={[styles.formInput, styles.formSubmitButton].join(" ")}>
-            Join Waitlist
+            Contact Us
         </button>
+        <input type="text" placeholder='Short message'
+        />
         
         {error ? <div className={styles.error}>{error}</div> : null}
     </form>

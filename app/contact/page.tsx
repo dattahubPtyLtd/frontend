@@ -52,6 +52,7 @@ function RightSide() {
 }
 function Form() {
     const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
     const [hasSubmitted, setHasSubmitted] = useState(false);
     const [error, setError] = useState("");
 
@@ -59,7 +60,7 @@ function Form() {
         e.preventDefault();
         let response = await fetch("/api/waitlist", {
             method: "POST",
-            body: JSON.stringify({ email: email })
+            body: JSON.stringify({ email: email, message: message })
         })
         if (response.ok) {
             setHasSubmitted(true);
@@ -72,7 +73,7 @@ function Form() {
     if (hasSubmitted) {
         return <div className={styles.formWrapper}>
             <span className={styles.subtitle}>
-                Thanks for signing up! We will be in touch soon.
+                Thanks for contactiing us! We are super thrilled and will be in touch soon.
             </span>
         </div>
     }
@@ -83,11 +84,12 @@ function Form() {
         <input type="email" required placeholder="Email"
             className={[styles.formInput, styles.formTextInput].join(" ")}
             value={email} onChange={e => setEmail(e.target.value)} />
-
         <button type="submit" className={[styles.formInput, styles.formSubmitButton].join(" ")}>
-            Join Waitlist
+            Contact Us
         </button>
-
+        <textarea autoFocus placeholder='Tell us if you have something specific or let it be blank' className={[styles.formMessageInput].join("")}
+        value={message} onChange={e=>setMessage(e.target.value)}
+        />
         {error ? <div className={styles.error}>{error}</div> : null}
     </form>
 }
