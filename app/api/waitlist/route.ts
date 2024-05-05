@@ -1,6 +1,8 @@
 import { NextResponse, NextRequest } from 'next/server'
 require('dotenv').config();
+const fs = require('fs');
 import mailjet from 'node-mailjet';
+
 
 const mailjetClient = mailjet.apiConnect(
   process.env.MAILJET_API_PUBLIC_KEY,
@@ -47,13 +49,13 @@ export async function POST(
 ) {
   const body = await req.json();
   const email = parseAndValidateEmail(body);
-  const message = "Test Tanmay"
+  const message ="message" in body ? body["message"]:"The sender did not enter any message;";
   try {
     await sendEmail({
       to: 'tanmay.datta86@gmail.com',
       from: "tanmay.datta86@gmail.com",
-      subject: `Dattahub got an email enquiry from  ${email} and message ${message}`,
-      message: 'This is a test email sent from dattahub using Mailjet.',
+      subject: `Dattahub got an email enquiry from  ${email}`,
+      message: message,
     });
     console.log('Email sent successfully!');
   } catch (error) {
@@ -67,8 +69,18 @@ export async function POST(
   );
 };
 async function saveEmail(email:string) {
-  // TODO: what to do here?
-  console.log("Got email: " + email)
+  if (email != null){
+
+  let usersEmailed = fs.readFileSync("useremails.json", 'utf-8')
+  let emails = JSON.parse(usersEmailed);
+  console.log("Got email list: " +  emails.emails )
+  emails.emails.push(email)
+  fs.writeFileSync("useremails.json", JSON.stringify(emails), 'utf-8')
+  }
+  else{
+
+    console.log("Not saving anything already registered")
+  }
 }
 
 // Make sure we receive a valid email
@@ -97,6 +109,13 @@ function parseAndValidateEmail(body:string) {
         {message:"Invalid email"},
         {status:400},
       );
+  }
+  let usersEmailed = fs.readFileSync("useremails.json", 'utf-8')
+  let emails = JSON.parse(usersEmailed);
+  console.log(emails)
+  if (emails.emails.includes(email)){
+    console.log( "already entered email")
+    return null;
   }
 
   return email

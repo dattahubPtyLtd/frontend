@@ -72,25 +72,25 @@ export default function Home() {
             The magic that makes it happen
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-6 m-auto gap-4">
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Python</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-green-500 opacity-100">Python</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-green-500 opacity-100">Django</div>
         <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">NextJs</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Rails</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Dotnet</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-blue-900 opacity-100">C++</div>
 
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Docker</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Kubernetes</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100"></div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-teal-500 opacity-100">Docker</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-teal-500 opacity-100">Kubernetes</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-red-400 opacity-100">Azure</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-red-400 opacity-100">Terraforms</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-pink-500 opacity-100">AWS</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-pink-500 opacity-100">AWS cdk</div>
 
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">MSSQL</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Stripe</div>
         <div className="rounded border px-4 py-2 shadow-sm bg-red-100 border-red-300 dark:up-bg-dark dark:border-black dark:text-red-500 opacity-100">Postgres</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">Django</div>
-        <div className="rounded border px-4 py-2 shadow-sm bg-red-100 border-red-300 dark:up-bg-dark dark:border-black dark:text-red-500 opacity-100">Postgres</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">DataDog</div>
+        <div className="rounded border px-4 py-2 shadow-sm bg-red-100 border-red-300 dark:up-bg-dark dark:border-black dark:text-red-500 opacity-100">Prometheus</div>
         <div className="rounded border px-4 py-2 shadow-sm bg-purple-100 border-purple-300 dark:up-bg-dark dark:border-black dark:text-purple-500 opacity-100">And a lot more..</div>
 
         </div>
