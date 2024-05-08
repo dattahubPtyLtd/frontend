@@ -52,7 +52,7 @@ export async function POST(
   const message ="message" in body ? body["message"]:"The sender did not enter any message;";
   try {
     await sendEmail({
-      to: 'tanmay.datta86@gmail.com',
+      to: 'mailto@dattahub.com',
       from: "tanmay.datta86@gmail.com",
       subject: `Dattahub got an email enquiry from  ${email}`,
       message: message,
