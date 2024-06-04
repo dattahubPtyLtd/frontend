@@ -49,6 +49,12 @@ export async function POST(
 ) {
   const body = await req.json();
   const email = parseAndValidateEmail(body);
+  if (email==null) {
+   return NextResponse.json(
+    {message: "not sending email as we have already registered your email address"},
+    {status:202}
+   ) 
+  }
   const message ="message" in body ? body["message"]:"The sender did not enter any message;";
   try {
     await sendEmail({
