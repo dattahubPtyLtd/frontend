@@ -14,12 +14,12 @@ export async function sendEmail({ to, from, subject, message}) {
       {
         From: {
           Email: from,
-          Name: 'Your Name',
+          Name: 'Dattahub Client',
         },
         To: [
           {
             Email: to,
-            Name: 'Recipient Name',
+            Name: 'Dattahub',
           },
         ],
         Subject: subject,
