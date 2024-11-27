@@ -37,7 +37,7 @@ function LeftSide() {
             Have Questions?<br/>
         </h1>
         <div className={styles.subtitle}>
-            Coding and creating smashing products is our passion. We love new challenges and would be thrilled to explain our offerings.
+            Coding and creating smashing products is our passion. We love new challenges and would be thrilled to explain our offerings. Write to us at admin@dattahub.com or simply fill the contact form.
         </div>
         <h1 className={styles.title}>
             <span className={styles.titleKeyword}>Contact Us</span>

@@ -21,12 +21,12 @@ export default function Home() {
 function LeftSide() {
     return <div className={styles.column}>
         <h1 className={styles.title}>
-            <span className={styles.title}>We are not hiring at the moment.. But we really hope that we do in near future. Watch this space</span>
+            <span className={styles.title}>We are not hiring at the moment.. But we really hope that we do in near future. Watch this space. Contact admin@dattahub.com for any queries.</span>
         </h1>
     </div>
 }
 function RightSide() {
     return <div className={styles.column}>
-        <img width="100%" height="100%" src="/nothing.jpeg"/>
+        {/* <img width="100%" height="100%" src="/nothing.jpeg"/> */}
     </div>
 }
