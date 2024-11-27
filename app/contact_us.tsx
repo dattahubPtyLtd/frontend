@@ -7,7 +7,7 @@ const ContactUsForm = () => {
   <dialog id="my_modal_1" className="modal">
     <div className="modal-box">
       <h3 className="font-bold text-lg text-center">Hello!</h3>
-      <p className="py-4 font-semibold">Please fill out your email address with query and we will get back to you asap.</p>
+      <p className="py-4 font-semibold">We are email away at: admin@dattahub.com. Otherwise please fill out your email address with query and we will get back to you asap.</p>
       <div className="modal-action">
         <Form/>
       </div>
